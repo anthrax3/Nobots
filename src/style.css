@@ -63,7 +63,8 @@ div.c {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    margin-left: -500px;
+    transform: translateY(-50%);
     width: 1000px;
 }
 a {

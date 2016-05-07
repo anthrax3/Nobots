@@ -3,7 +3,7 @@
 $NOBOTS_KEY = 'A secure passphrase to encrypt data with. Do not share this password with anyone';
 $NOBOTS_CHECKPOINT_URL = 'https://apps.varden.info/nobots/checkpoint/'; // The checkpoint directory of wherever you choose you install Nobots. 
 
-
+$cssver = 3;
 if (strtoupper($_SERVER['REQUEST_METHOD']) != "POST") {
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) != "POST") {
 <head>
 <title>No bots welcome!</title>
 <link href='//fonts.googleapis.com/css?family=Exo+2:300,400,700' rel='stylesheet' type='text/css'>
-<link href="style.css?2" rel="stylesheet" type="text/css">
+<link href="style.css?<?php echo $cssver; ?>" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="c">
@@ -42,7 +42,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) != "POST") {
 <head>
 <title>No bots welcome!</title>
 <link href='//fonts.googleapis.com/css?family=Exo+2:300,400,700' rel='stylesheet' type='text/css'>
-<link href="style.css?2" rel="stylesheet" type="text/css">
+<link href="style.css?<?php echo $cssver; ?>" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="c">
