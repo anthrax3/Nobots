@@ -12,7 +12,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) != "POST") {
 <head>
 <title>No bots welcome!</title>
 <link href='//fonts.googleapis.com/css?family=Exo+2:300,400,700' rel='stylesheet' type='text/css'>
-<link href="../style.css?1" rel="stylesheet" type="text/css">
+<link href="../style.css?2" rel="stylesheet" type="text/css">
 <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
 <script type="text/javascript">
 function proceed() {
@@ -80,7 +80,7 @@ function fillHash() {
 <head>
 <title>No bots welcome!</title>
 <link href='//fonts.googleapis.com/css?family=Exo+2:300,400,700' rel='stylesheet' type='text/css'>
-<link href="../style.css?1" rel="stylesheet" type="text/css">
+<link href="../style.css?2" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="c">
@@ -101,7 +101,7 @@ function fillHash() {
 <head>
 <title>No bots welcome!</title>
 <link href='//fonts.googleapis.com/css?family=Exo+2:300,400,700' rel='stylesheet' type='text/css'>
-<link href="../style.css?1" rel="stylesheet" type="text/css">
+<link href="../style.css?2" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="c">
