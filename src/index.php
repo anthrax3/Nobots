@@ -1,6 +1,7 @@
 <?php
 
 $NOBOTS_KEY = 'A secure passphrase to encrypt data with. Do not share this password with anyone';
+$NOBOTS_CHECKPOINT_URL = 'https://apps.varden.info/nobots/checkpoint/'; // The checkpoint directory of wherever you choose you install Nobots. 
 
 
 if (strtoupper($_SERVER['REQUEST_METHOD']) != "POST") {
@@ -46,7 +47,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) != "POST") {
 <div class="c">
 <h1>Thanks for fighting the bots!</h1>
 <p>Here is your bot-proof URL:</p>
-<div class="iwrap"><div class="iinner"><div class="caret">&gt;</div><input onclick="this.select();" type="text" readonly id="nobots" value="https://apps.varden.info/nobots/checkpoint/<?php echo bin2hex(openssl_random_pseudo_bytes(4)); ?>#<?php echo urlencode($cipher); ?>" /><div class="caret">&#x2714;</div></div></div>
+<div class="iwrap"><div class="iinner"><div class="caret">&gt;</div><input onclick="this.select();" type="text" readonly id="nobots" value="<?php echo $NOBOTS_CHECKPOINT_URL . bin2hex(openssl_random_pseudo_bytes(4)); ?>#<?php echo urlencode($cipher); ?>" /><div class="caret">&#x2714;</div></div></div>
 <p class="footer">Do not submit private or confidential information using this form. We are<br />not responsible for your data. All submitted data is to be considered public.</p>
 </div>
 </body>
